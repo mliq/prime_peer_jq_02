@@ -13,7 +13,7 @@ button{
 	width: 45%;
 }
 .row {
-	display: table-row;
+	/*THIS BREAKS THE SLIDEDOWN display: table-row;*/
 }
 
 .propertyCell {

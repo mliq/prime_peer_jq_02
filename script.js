@@ -9,12 +9,10 @@ $(document).ready(function(){
 		squareFeet = randomNumber(1000, 9999);
 		pricePerFoot = randomNumber(1, 25);
 
-
-
-
-		$('#ourTable').append("<div class = 'row'><div class='propertyCell'>Property ID : " + propertyId + "</div><div class='feetCell'>" + squareFeet + " Sq. Ft.</div><div class='priceCell'>$" + pricePerFoot + " / sq.ft.</div><div class='buttonCell'> <button class='removeButton'>Remove</button></div></div>");
-
-		var el = $('#ourTable').children().last();
+		var el = "<div class = 'row'><div class='propertyCell'>Property ID : " + propertyId + "</div><div class='feetCell'>" + squareFeet + " Sq. Ft.</div><div class='priceCell'>$" + pricePerFoot + " / sq.ft.</div><div class='buttonCell'> <button class='removeButton'>Remove</button></div></div>";
+		
+		$('#ourTable').append(el);
+		el = $('#ourTable').children().last();
 		el.hide().slideDown(1000);	
 
 	});
